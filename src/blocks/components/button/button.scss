@@ -1,0 +1,38 @@
+.button{
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    &.blue{
+        background-color: $blue;
+        font-weight: 700;
+        padding: 15px 20px;
+        // line-height: 2.6;
+        color: $white;
+        transition: transition();
+        &:hover{
+            background-color: lighten($blue, 5%);
+        }
+    }
+    &.active{
+        background-color: #dddddd;
+        font-weight: 700;
+        padding: 15px 20px;
+        // line-height: 2.6;
+        color: $blue;
+        transition: transition();
+        &:hover{
+            background-color: lighten(#dddddd, 5%);
+        }
+    }
+    &.white{
+        background-color: $white;
+        font-weight: 700;
+        padding: 8px 21px;
+        color: $pink;
+        transition: transition();
+        &:hover{
+            background-color: lighten($white, 5%);
+        }
+    }
+
+}

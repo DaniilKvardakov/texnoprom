@@ -1,0 +1,293 @@
+body {
+    font-family: "Calibri", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $black;
+    min-width: 320px;
+    background-color: $white;
+    &.active-modal{
+        overflow: hidden;
+    }
+}
+html{
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+
+    &.o-hidden {
+        padding-right: 15px;
+    }
+}
+
+
+
+// body{
+//     overflow: overlay;
+// }
+
+// ::-webkit-scrollbar {
+//     width: 10px;
+//     transition: transition();
+// }
+
+// ::-webkit-scrollbar-track { /* 5 - ползунок */
+//     // background: transparent;
+//     // display: none;
+    
+//     transition: transition();
+
+//   }
+// ::-webkit-scrollbar-thumb { /* 5 - ползунок */
+//   border-radius: 100px;
+//   height: 70px;
+//   background: darken(#fff, 30%);
+//   transition: transition();
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     width: 12px;
+//     cursor: grab;
+//   transition: transition();
+//   background: $grey;
+// }
+// ::-webkit-scrollbar-thumb:focus {
+//   transition: transition();
+//   cursor: grabbing;
+// }
+
+
+
+main {
+    &.inner-page {
+        margin-bottom: 100px;
+    }
+
+    &.main-page {
+        margin-top: 96px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.background {
+    &.white {
+        background-color: $white;
+    }
+    
+   
+}
+.main-content{
+    &.white {
+        background-color: $white;
+    }
+   
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PF Din Display Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: transition();
+    &.blue{
+        color: $blue;
+    }
+    &.white{
+        color: $white;
+    }
+    &.pink{
+        color: $pink;
+    }
+}
+
+a {
+    font-family: "Calibri", sans-serif;
+    text-decoration: none;
+    color: inherit;
+    transition: transition();
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+
+p {
+    font-weight: 400;
+    font-size: inherit;
+    line-height: 1.5;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+
+
+
+// .main-content {
+//     flex: 1 0 auto;
+//     width: 100%;
+//     height: 100%;
+// }
+
+.o-hidden {
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+    // @include to(576px) {
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    // }
+}
+
+section {
+    
+    margin: 80px 0;
+
+}
+
+h1,
+.h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.1;
+
+    @media(max-width: 991px) {
+        font-size: 44px;
+    }
+    @media(max-width: 576px) {
+        font-size: 40px;
+    }
+    &.center {
+        text-align: center;
+    }
+}
+
+h2,
+.h2 {
+    text-transform: uppercase;
+    margin-bottom: 0.43em;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+
+    @media(max-width: 991px) {
+        font-size: 36px;
+    }
+    @media(max-width: 576px) {
+        font-size: 34px;
+    }
+    &.center {
+        text-align: center;
+    }
+}
+
+h3,
+.h3 {
+    margin-bottom: 0.33em;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: .005em;
+    line-height: 1.1;
+
+    &.black {
+        color: $black;
+    }
+
+    &.white {
+        color: $white;
+    }
+    &.center {
+        text-align: center;
+    }
+
+
+    @media(max-width: 991px) {
+        font-size: 28px;
+    }
+    @media(max-width: 756px) {
+        font-size: 26px;
+    }
+}
+
+.error-message {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    &-content {
+        &.active {
+            display: block;
+        }
+    }
+}
+
+
+
+.js-modal-menu-open {
+    cursor: pointer;
+}
+
+.align-bottom{
+    align-items: flex-end;
+}
+
+
+input,select,textarea{
+    // background: 0 0;
+    border-radius: 0;
+    outline: 0;
+    border: none;
+    width: 100%;
+    appearance: none;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+

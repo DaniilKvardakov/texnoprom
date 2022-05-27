@@ -1,0 +1,40 @@
+mixin main-form 
+    section.main-form 
+        .container 
+            .form.js-form 
+                .form__col.form__col--contacts 
+                    .form__item 
+                        .form__item-title Фамилия* 
+                        input(type="text" id="lastName")
+                    .form__item 
+                        .form__item-title Имя* 
+                        input(type="text" id="firstName")
+                    .form__item 
+                        .form__item-title Отчество 
+                        input(type="text" id="patronymic")
+                    .form__item
+                        .form__item-title E-mail* 
+                        input(type="text" id="email")
+                    .form__item 
+                        .form__item-title Телефон* 
+                        input(type="text" id="phone" placeholder="+7")
+                .form__col.form__col-textarea 
+                    .form__item 
+                        input(type="text" id="theme" placeholder="Тема сообщения*")
+                    .form__item.form__item-textarea 
+                        textarea(id="message" placeholder="Суть обращения*")
+                .form__col.form__col--send 
+                    .form__item 
+                        label(for="file")
+                            input(type="file" id="file" multiple)
+                            .form__item-text 
+                                div 
+                                    img(src="../img/file.png", alt="")
+                                p Прикрепить до 20 файлов (общий размер - до 20МБ)
+                    .form__item 
+                        .form__error#error Возникла ошибка при отправке, попробуйте позднее.
+                        +button('Отправить', 'white js-form-send')
+
+
+
+

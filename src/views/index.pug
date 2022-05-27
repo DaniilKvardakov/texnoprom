@@ -1,0 +1,40 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Главная"
+
+block content
+	include ../blocks/modules/header/header
+	include ../blocks/modules/footer/footer
+	include ../blocks/components/main-preview/main-preview
+	include ../blocks/components/main-organizers/main-organizers
+	include ../blocks/components/main-audience/main-audience
+	include ../blocks/components/main-history/main-history
+	include ../blocks/components/main-ecosystem/main-ecosystem
+	include ../blocks/components/main-content/main-content
+	include ../blocks/components/main-form/main-form
+	include ../blocks/components/main-news/main-news
+	include ../blocks/components/modal-gallery/modal-gallery
+	include ../blocks/components/modal-video/modal-video
+
+
+	include ../blocks/components/banner/banner
+	+main-preview
+	+banner
+	+main-content
+	+main-news 
+	+main-history 
+	+main-ecosystem 
+	+main-organizers
+	+main-audience
+	+main-form
+
+	
+	+modal-gallery
+	+modal-video
+
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

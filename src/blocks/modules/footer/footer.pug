@@ -1,0 +1,42 @@
+include ../../components/button/button  
+mixin footer 
+    .footer 
+        .container 
+            .footer__inner
+                .footer__logo 
+                    div 
+                        a(href="") 
+                            img(src="../img/footer-logo.png", alt="")
+                    +button('Скачать презентацию', 'blue', '','_blank')
+                .footer__row 
+                    .footer__copyright 
+                        p © 2013–2022 Технопром
+                    ul.footer__nav 
+                        li.footer__nav-item 
+                            a(href="#news") Новости 
+                        li.footer__nav-item 
+                            a(href="#forum") О форуме 
+                        li.footer__nav-item.current 
+                            a(href="#partners") Партнерам 
+                        li.footer__nav-item 
+                            a(href="#participants") Участникам 
+                        li.footer__nav-item 
+                            a(href="#media") СМИ 
+                    .footer__lang 
+                        .footer__lang-item.current
+                            a(href="#") Rus 
+                        .footer__lang-item 
+                            a(href="#") Eng 
+                        .footer__lang-item 
+                            a(href="#") Zho 
+                    .footer__social 
+                        .footer__social-item 
+                            a(target="blank"  href="") 
+                                img(src="../img/footer-telegram.png", alt="") 
+                        .footer__social-item 
+                            a(target="blank"  href="") 
+                                img(src="../img/footer-vk.png", alt="") 
+                        .footer__social-item 
+                            a(target="blank"  href="") 
+                                img(src="../img/footer-ok.png", alt="") 
+        

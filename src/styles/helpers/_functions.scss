@@ -1,0 +1,9 @@
+@function rem($px) {
+    @return ($px / 16) +rem;
+}
+
+
+$cubic: cubic-bezier(0.19, 1, 0.22, 1);
+@function transition($all: all, $time: .6s, $effect: $cubic, $delay: 0s) {
+    @return $all $time $effect $delay;
+  }
